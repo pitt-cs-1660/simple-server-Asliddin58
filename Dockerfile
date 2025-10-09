@@ -18,7 +18,7 @@ RUN pip install --no-cache-dir uv
 
 WORKDIR /app
 
-# README must be in build context (your build backend/uv expects it)
+# README must be in build context (build backend/uv expects it)
 COPY pyproject.toml README.md ./
 # Bring in the rest of the project
 COPY . .
